@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 
+import 'constants.dart';
+
 class DarkTheme{
   ThemeData get themes=>ThemeData(
     brightness: Brightness.dark,
-    fontFamily: "SansPro",
+
     primarySwatch: Colors.purple,
-    accentColor: Colors.purpleAccent,
+    accentColor: Colors.black,
     backgroundColor: Colors.transparent,
     bottomAppBarColor: Colors.transparent,
-    primaryColor: Colors.purpleAccent,
+    primaryColor: Colors.black,
     applyElevationOverlayColor: true,
     buttonColor: Colors.blue,
     dividerColor: Colors.grey,
-    scaffoldBackgroundColor: Colors.transparent,
-    appBarTheme: const AppBarTheme(
+    scaffoldBackgroundColor: const Color(0xff6d6868),
+    appBarTheme:  AppBarTheme(
       backgroundColor: Colors.transparent,
-      titleTextStyle: TextStyle(fontSize: 20,color: Colors.white,fontWeight: FontWeight.w900,fontFamily: "SansPro"),
-      elevation: 0 ,
-
-    )
+      titleTextStyle: AppFonts().textRegular22,
+      elevation: 0.0,)
 
   );
 }
